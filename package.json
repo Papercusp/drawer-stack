@@ -1,0 +1,23 @@
+{
+  "name": "@papercusp/drawer-stack",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Generic cross-island coordinator for right-edge drawers that share one trigger stack and can coexist as side-by-side panes (newest opens leftmost), with a viewport-aware overlay fallback. Framework: vanilla store + a thin React hook. Owns placement, the shared backdrop, ESC + scroll-lock; it does NOT reimplement the drawer panel (Vaul/Radix stay in the consumer).",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "exports": {
+    ".": { "types": "./src/index.ts", "import": "./src/index.ts", "default": "./src/index.ts" }
+  },
+  "sideEffects": false,
+  "scripts": {
+    "test": "vitest run --passWithNoTests"
+  },
+  "peerDependencies": {
+    "react": ">=19.0.0",
+    "react-dom": ">=19.0.0"
+  },
+  "devDependencies": {
+    "@papercusp/test-config": "*",
+    "vitest": "^4.1.5"
+  }
+}
