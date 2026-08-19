@@ -10,7 +10,8 @@
   },
   "sideEffects": false,
   "scripts": {
-    "test": "vitest run"
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit -p tsconfig.json"
   },
   "peerDependencies": {
     "react": ">=19.0.0",
